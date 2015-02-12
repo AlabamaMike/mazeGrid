@@ -7,7 +7,7 @@ class BinaryTree
       neighbors << cell.east if cell.east
       
       index = rand(neighbors.length)
-      neighbor = neighbors[index]
+      neighbor = neighbors.sample
       
       cell.link(neighbor) if neighbor
     end
